@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>おすすめの映画紹介サイト</title>
+    <link rel="stylesheet" href="./static/stylesheet.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="theme">おすすめの映画紹介サイト</h1>
+    </header>
+    <main>
+      <article>
+        <h1 class="name">1位:きっとうまくいく</h1>
+        <img src="{% static 'images/きっとうまくいく.jpg' %}" alt="きっとうまくいく">
+        <p>インドの名門大学に通う3人の青年。そのうちの1人が学長の娘と親しくなるが、やがて3人で起こした騒動を機に、もともと自由人だった彼は姿を消して音信不通となってしまう。10年後、他の2人はいまだに行方不明の友人を追っていた。</p>
+        <a href="https://www.youtube.com/watch?v=xvszmNXdM4w">予告動画</a>
+        <a href="https://www.amazon.co.jp/gp/video/detail/0TEJ79NSB7J2QBPBNJIYK93605/ref=atv_dl_rdr?tag=justjpcock-22">amazon</a>
+        <a href="{% url 'view1' %}">レビューページ</a>
+      </article>
+      <article>
+        <h1 class="name">2位:女神の見えざる手</h1>
+        <img src="{% static 'images/女神の見えざる手.jpg' %}" alt="女神の見えざる手">
+        <p>米国の国政に影響を与える敏腕ロビイスト。銃規制をめぐる案件で擁護派の依頼を断った彼女は、規制を推進する小さなロビー会社に移籍し、緻密な策を展開する。しかしその戦略は、幾多の困難や危険を招くことになる。</p>
+        <a href="https://youtu.be/WxGc__LCTWg">予告動画</a>
+        <a href="https://www.amazon.co.jp/gp/video/detail/0G0X4XIBP6XLWDZOUYMUGX7W70/ref=atv_dl_rdr?tag=justjpcock-22">amazon</a>
+        <a href="{% url 'view2' %}">レビューページ</a>
+      </article>
+      <article>
+        <h1 class="name">3位:インターステラー</h1>
+        <img src="{% static 'images/インターステラー.jpg' %}" alt="インターステラー">
+        <p>近未来の地球。植物の激減と食糧難で滅亡の危機に瀕した人類は、居住可能な惑星を求めて宇宙の彼方に調査隊を送り込む。クルーの1人として選ばれた男性は、もう会えないと泣きじゃくる娘に必ず戻ると約束して、過酷なミッションに挑む。</p>
+        <a href="https://youtu.be/f7R5PtXCZU8">予告動画</a>
+        <a href="https://www.amazon.co.jp/gp/video/detail/0ST7XSUGN04TQWRDCDKH6N164Y/ref=atv_dl_rdr?tag=justjpcock-22">amazon</a>
+        <a href="{% url 'view3' %}">レビューページ</a>
+      </article>
+      <article>
+        <h1 class="name">4位:セッション</h1>
+        <img src="{% static 'images/セッション.jpg' %}" alt="きっとうまくいく">
+        <p>名門音楽大学に入学したニーマンはフレッチャーのバンドにスカウトされる。ここで成功すれば偉大な音楽家への野心は叶ったも同然だった。しかし待ち受けていたのは、天才を生み出すことに取りつかれたフレッチャーの、“完璧”を求める狂気のレッスンだった。</p>
+        <a href="https://www.youtube.com/watch?v=v7jEDQlR9BY">予告動画</a>
+        <a href="https://www.amazon.co.jp/gp/video/detail/0U8DDBHQ7TW50DMXZGZMT4UHLQ/ref=atv_dl_rdr?tag=justjpcock-22">amazon</a>
+        <a href="{% url 'view4' %}">レビューページ</a>
+      </article>
+      <article>
+        <h1 class="name">5位:グリーンブック</h1>
+        <img src="{% static 'images/グリーンブック.jpg' %}" alt="グリーンブック">
+        <p>1962年、アメリカ。ニューヨークの一流ナイトクラブで用心棒を務めていたイタリア系男のトニー・リップは、ひょんなことから天才黒人ピアニスト、ドクター・シャーリーが南部で行う演奏ツアーに運転手兼ボディガードとして雇われる。</p>
+        <a href="https://www.youtube.com/watch?v=awUd_khNEcc">予告動画</a>
+        <a href="https://www.amazon.co.jp/gp/video/detail/0FO6HZVKDVYD69K0GMLXC6J9EA/ref=atv_dl_rdr?tag=justjpcock-22">amazon</a>
+        <a href="{% url 'view5' %}">レビューページ</a>
+      </article>
+      <article>
+        <h1 class="name">6位:イミテーション・ゲーム</h1>
+        <img src="{% static 'images/イミテーション・ゲーム.jpg' %}" alt="イミテーション・ゲーム">
+        <p>第2次大戦下の英国。ドイツ軍の暗号エニグマの解読のため、政府は各分野から天才たちを集める。その中の1人、数学者アラン・チューリングは独自の解析を実践。しかし、その挑戦の果てには大きな波乱が待ち受けていた。</p>
+        <a href="https://www.youtube.com/watch?v=Lzd7MAd0J5A">予告動画</a>
+        <a href="https://www.amazon.co.jp/gp/video/detail/0GDNENS2XT163WQHXWUT1VQFAF/ref=atv_dl_rdr?tag=justjpcock-22">amazon</a>
+        <a href="{% url 'view6' %}">レビューページ</a>
+      </article>
+    </main>
+  </body>
+</html>

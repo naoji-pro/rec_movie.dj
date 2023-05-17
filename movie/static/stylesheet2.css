@@ -1,0 +1,17 @@
+.block {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .field {
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+  }

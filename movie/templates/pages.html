@@ -1,0 +1,41 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet2.css' %}">
+</head>
+  
+{% if message1 %}
+    <h1>{{ message1 }}</h1>
+    <div class="block">
+        <h2>管理人の感想</h2>
+        <p>title : {{ post.title }}</p>
+        <p>text : {{ post.text }}</p>
+        <hr>
+    </div>
+    
+    <h2>コメント</h2>
+    {% for comment in post.comments.all %}
+    <div class="block">
+        <p>name: {{comment.name}}</p>
+        <p>score: {{comment.score}}</p>
+        <p>text: {{comment.text}}</p>
+        <p>posted date : {{comment.posted_dated}}</p>
+        <hr>
+    </div>
+    {% empty %}
+    <div>
+        <P>no comment</P>
+    </div>
+    {% endfor %}
+    <p>＊Scoreは5段階で評価してください。</p>
+    <form action="." method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <div class="field">
+            <h2>コメントを追加</h2>
+            <div class="control">
+                <button class="button is-danger">送信</button>
+            </div>
+        </div>
+        <a href="{% url 'frontpage' %}",class="back">ホームに戻る</a>
+    </form>
+{% endif %}
